@@ -1,0 +1,37 @@
+/* Home page CSS Start */
+#formenucentre{
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    margin-bottom: 0px;
+    border-radius: 0px;
+    background-color: #000000;
+    border: 0px;
+    box-shadow: 0px 0px 0px 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.d-flex a{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.d-flex a{
+    text-decoration: none;
+}
+/* Home page CSS End */
+
+/* Footer CSS Start */
+footer p{
+    background-color: white;
+    padding-top: 10px;
+}

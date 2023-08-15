@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" href="script.js">
+
+    <title>FCCU</title>
+  </head>
+  <body>
+<!-- NavBar START-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-lg-top">
+      <div class="container-fluid">
+            <img src="images/logo.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 " id="formenucentre">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <a href="main-page.html">Sign Out</a>
+              </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--Carousl start-->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/coursels-img-1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/coursels-img-2.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+<br>
+
+<!-- Form Start-->
+<div class="container">    
+  <h3>What We Do</h3><br>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Departments</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Computer Science</td>
+            <td>cs.edu@fccu.pk</td>
+            <td>Welcome to our dynamic and innovative Computer Science Department</td>
+          </tr>
+          <tr>
+            <td>Data Science</td>
+            <td>ds.edu@fccu.pk</td>
+            <td>Welcome to our dynamic and innovative Data Science Department</td>
+          </tr>
+          <tr>
+            <td>Software Engineering</td>
+            <td>se.edu@fccu.pk</td>
+            <td>Welcome to our dynamic and innovative Software Engineering Department</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Button trigger modal -->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More Details</button>
+
+    <!-- Modal --> 
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Departments</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">Computer Science</li>
+              <li class="list-group-item">Electrical Engineering</li>
+              <li class="list-group-item">Software Engineering</li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+
+    <div class="col-sm-6"> 
+      <h3>Events</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Convocation</td>
+            <td>25 August 2023</td>
+            <td>Celebrate achievement at our joyous Convocation ceremony! Join us</td>
+          </tr>
+          <tr>
+            <td>Admission Last Date</td>
+            <td>1st September 2023</td>
+            <td>Apply for admission before the deadlin, hurry up!</td>
+          </tr>
+          <tr>
+            <td>Orientation</td>
+            <td>5th September 2023</td>
+            <td>Join our welcoming Orientation program for a smooth transition to campus life.</td>
+          </tr>
+        </tbody>
+      </table>  
+      
+       <!-- Button trigger modal -->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More Details</button>
+
+    <!-- Modal --> 
+  
+
+
+    </div>
+  </div>
+</div> 
+
+<!-- Footer Start-->
+
+<footer class="container-fluid text-center">
+  <p>Copyrights 2023 All righta reserved "ALI BAIG AWAN"</p>
+</footer>
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

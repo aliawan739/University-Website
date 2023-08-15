@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-signin.css">
+
+    <title>FCCU Sign in</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1>Sign In</h1>
+        <form id="signinForm">
+          <div class="form-group">
+
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+          
+            <input type="password" id="password" name="password" placeholder="Enter Password">
+            
+            <button type="submit" id="signupButton">Sign Up</button>
+            <button type="submit" id="signinButton">Sign In</button>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      const signinForm = document.getElementById('signinForm');
+      const signupButton = document.getElementById('signupButton');
+      const signinButton = document.getElementById('signinButton');
+      
+      signinForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        const demoEmail = "alibaigawan1@gmail.com";
+        const demoPassword = "demo123";
+        
+        if (email === demoEmail && password === demoPassword) {
+          window.location.href = "home.html";
+        } else {
+          alert("Invalid email or password");
+        }
+
+        console.log("Email:", email);
+        console.log("Password:", password);
+
+        signinForm.reset();
+      });
+
+      signupButton.addEventListener("click", function(){
+        window.location.href = "signup.html";
+      });
+    </script>
+  </body>
+</html>

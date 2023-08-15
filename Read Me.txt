@@ -1,0 +1,10 @@
+****************************Author Name: Ali Baig Awan**************************
+
+1- first of all unzip the file 
+2- first run the main page file
+3- open code in visual studio code
+4- don't use live server to preview the website
+5- Login Id Password is ( email: alibaigawan1@gmail.com 
+			  password: demo123 )
+
+**************************************Thanks*************************************
